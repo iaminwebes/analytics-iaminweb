@@ -10,9 +10,9 @@
     "url": "https://github.com/umami-software/umami.git"
   },
   "type": "module",
-  "engines": {
-    "pnpm": "12.3.4"
-  },
+ "engines": {
+  "pnpm": ">=12.3.4"
+},
   "scripts": {
     "dev": "dotenv run -q -- next dev --turbo",
     "build": "npm-run-all check:env build:db check:db build:tracker build:recorder build:geo build:openapi build:packages build:app",
